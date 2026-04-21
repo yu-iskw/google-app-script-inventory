@@ -82,21 +82,22 @@ This decomposes tasks into independent subtasks with file ownership, executes th
 
 ## Available Skills
 
-| Skill                          | Purpose                                                                                        |
-| :----------------------------- | :--------------------------------------------------------------------------------------------- |
-| `build-and-fix`                | Build the project and automatically fix build errors, compilation failures, or type mismatches |
-| `clean-project`                | Perform a "hard reset" of the development environment (clean node_modules, lockfiles, etc.)    |
-| `fix-issue`                    | Fix a GitHub issue end-to-end (view, branch, fix, test, PR)                                    |
-| `improve-claude-config`        | Self-improvement skill for evolving Claude Code configuration                                  |
-| `initialize-project`           | Initialize a new project from the template (rename packages, update metadata)                  |
-| `lint-and-fix`                 | Run linters and fix violations, formatting errors, or style mismatches using Trunk             |
-| `manage-adr`                   | Manage Architecture Decision Records (init, create, list, link ADRs in `docs/adr`)             |
-| `manage-changelog`             | Manage changelogs with Changie (init, add fragments, batch releases, merge into CHANGELOG.md)  |
-| `node-upgrade`                 | Safely upgrade Node.js dependencies in pnpm workspaces                                         |
-| `security-vulnerability-audit` | Audit security vulnerabilities using Trunk (Trivy and OSV-scanner)                             |
-| `setup-dev-env`                | Set up the development environment (Node.js, pnpm, Trunk)                                      |
-| `test-and-fix`                 | Run unit tests and automatically fix failures, regression bugs, or test mismatches             |
-| `problem-solving`              | Systematic issue analysis and report generation (global skill)                                 |
+| Skill                              | Purpose                                                                                                                       |
+| :--------------------------------- | :---------------------------------------------------------------------------------------------------------------------------- |
+| `build-and-fix`                    | Build the project and automatically fix build errors, compilation failures, or type mismatches                                |
+| `clean-project`                    | Perform a "hard reset" of the development environment (clean node_modules, lockfiles, etc.)                                   |
+| `fix-issue`                        | Fix a GitHub issue end-to-end (view, branch, fix, test, PR)                                                                   |
+| `google-apps-script-org-inventory` | Run the catalog CLI to inventory standalone Apps Script via domain-wide delegation; migrate DB, scan, optional Vertex, export |
+| `improve-claude-config`            | Self-improvement skill for evolving Claude Code configuration                                                                 |
+| `initialize-project`               | Initialize a new project from the template (rename packages, update metadata)                                                 |
+| `lint-and-fix`                     | Run linters and fix violations, formatting errors, or style mismatches using Trunk                                            |
+| `manage-adr`                       | Manage Architecture Decision Records (init, create, list, link ADRs in `docs/adr`)                                            |
+| `manage-changelog`                 | Manage changelogs with Changie (init, add fragments, batch releases, merge into CHANGELOG.md)                                 |
+| `node-upgrade`                     | Safely upgrade Node.js dependencies in pnpm workspaces                                                                        |
+| `security-vulnerability-audit`     | Audit security vulnerabilities using Trunk (Trivy and OSV-scanner)                                                            |
+| `setup-dev-env`                    | Set up the development environment (Node.js, pnpm, Trunk)                                                                     |
+| `test-and-fix`                     | Run unit tests and automatically fix failures, regression bugs, or test mismatches                                            |
+| `problem-solving`                  | Systematic issue analysis and report generation (global skill)                                                                |
 
 ## Configuration Self-Improvement
 

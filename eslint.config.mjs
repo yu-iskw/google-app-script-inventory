@@ -31,13 +31,13 @@ const sharedTsRules = Object.assign({}, tseslint.configs.recommended.rules, {
   'no-implied-eval': 'error',
   'no-new-func': 'error',
   'prefer-const': 'error',
-  'max-lines-per-function': ['error', { max: 280 }],
-  'max-depth': ['error', { max: 6 }],
-  'max-params': ['error', { max: 8 }],
+  'max-lines-per-function': ['error', { max: 200 }],
+  'max-depth': ['error', { max: 4 }],
+  'max-params': ['error', { max: 6 }],
   'max-nested-callbacks': ['error', { max: 4 }],
   // SonarJS
-  'sonarjs/cyclomatic-complexity': ['error', { threshold: 20 }],
-  'sonarjs/cognitive-complexity': ['error', 20],
+  'sonarjs/cyclomatic-complexity': ['error', { threshold: 15 }],
+  'sonarjs/cognitive-complexity': ['error', 15],
   'sonarjs/no-duplicate-string': 'error',
   'sonarjs/prefer-immediate-return': 'error',
   'no-unreachable': 'error',
@@ -55,6 +55,22 @@ export default [
       '.trunk/**',
       '**/*.generated.ts',
     ],
+  },
+  {
+    files: ['vitest.config.ts'],
+    languageOptions: {
+      parser: tsparser,
+      parserOptions: {
+        ...tsParserOptions,
+      },
+    },
+    plugins: {
+      '@typescript-eslint': tseslint,
+      sonarjs,
+    },
+    rules: {
+      ...sharedTsRules,
+    },
   },
   {
     files: ['packages/**/*.ts', 'packages/**/*.tsx'],
@@ -97,7 +113,7 @@ export default [
       // Tests often repeat string literals and use conditional expects; keep signal without noise.
       'vitest/no-conditional-expect': 'off',
       'sonarjs/no-duplicate-string': 'off',
-      'max-lines-per-function': ['error', { max: 700 }],
+      'max-lines-per-function': ['error', { max: 500 }],
     },
   },
   {
