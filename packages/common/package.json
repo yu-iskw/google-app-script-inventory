@@ -1,7 +1,7 @@
 {
-  "name": "@typescript-template/common",
+  "name": "@google-app-script-inventory/common",
   "version": "1.0.0",
-  "description": "Common utilities and types for the TypeScript template project.",
+  "description": "Shared types and helpers for the Google Apps Script inventory.",
   "keywords": [],
   "license": "Apache-2.0",
   "author": "",

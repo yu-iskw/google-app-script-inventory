@@ -1,0 +1,23 @@
+{
+  "name": "@google-app-script-inventory/catalog",
+  "version": "1.0.0",
+  "description": "Standalone Google Apps Script governance catalog CLI.",
+  "license": "Apache-2.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "catalog": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@google-app-script-inventory/common": "workspace:*",
+    "commander": "^14.0.1",
+    "google-auth-library": "^10.5.0",
+    "googleapis": "^150.0.1"
+  },
+  "optionalDependencies": {
+    "@google-app-script-inventory/catalog-ai": "workspace:*"
+  }
+}

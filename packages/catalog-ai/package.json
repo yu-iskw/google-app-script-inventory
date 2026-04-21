@@ -1,0 +1,15 @@
+{
+  "name": "@google-app-script-inventory/catalog-ai",
+  "version": "1.0.0",
+  "description": "Optional Vertex Gemini provider for the Google Apps Script inventory.",
+  "license": "Apache-2.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@google-app-script-inventory/common": "workspace:*",
+    "@google/genai": "^1.50.1"
+  }
+}
