@@ -2,6 +2,10 @@
   "compilerOptions": {
     "target": "es2022",
     "module": "commonjs",
+    "baseUrl": ".",
+    "paths": {
+      "@google-app-script-inventory/catalog-ai": ["../catalog-ai/src/index.ts"]
+    },
     "declaration": true,
     "outDir": "./dist",
     "strict": true,
